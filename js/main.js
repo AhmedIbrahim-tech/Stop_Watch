@@ -34,12 +34,12 @@ btnStart.addEventListener("click", () => {
     }
   }, 1000);
 
-  btnStart.style.pointerEvents = "none";
+  btnStart.classList.add("disabled");
 });
 
 btnStop.addEventListener("click", () => {
   clearInterval(Interval);
-  btnStart.style.pointerEvents = "visible";
+  btnStart.classList.remove("disabled");
 });
 
 // Reset Button Click Event

@@ -8,7 +8,7 @@
   <link rel="icon" href="./images/clock.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/all.css">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
@@ -19,19 +19,48 @@
 
     <section>
       <div class="container">
-        <img src="./images/clock.png" alt="" srcset="">
+        <div class="clock-card">
+          <img src="./images/clock.png" alt="Clock Icon" srcset="">
+          
+          <header>
+            <h1>AE's Stop Watch</h1>
+            <p class="subtitle">Precision Timing</p>
+          </header>
 
-            <header>
-              <h1>AE's Stop Watch</h1>
-            </header>
-
-        <div class="display">
-          <p><span class="hr">00</span> : <span class="min">00</span> : <span class="sec">00</span></p>
+          <div class="display">
+            <div class="time-container">
+              <div class="time-unit">
+                <span class="hr">00</span>
+                <span class="label">Hours</span>
+              </div>
+              <span class="separator">:</span>
+              <div class="time-unit">
+                <span class="min">00</span>
+                <span class="label">Minutes</span>
+              </div>
+              <span class="separator">:</span>
+              <div class="time-unit">
+                <span class="sec">00</span>
+                <span class="label">Seconds</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="button-group">
+            <button class="start btn" title="Start Timer">
+              <i class="fas fa-play"></i>
+              <span>Start</span>
+            </button>
+            <button class="stop btn" title="Stop Timer">
+              <i class="fas fa-pause"></i>
+              <span>Stop</span>
+            </button>
+            <button class="reset btn" type="reset" title="Reset Timer">
+              <i class="fas fa-redo"></i>
+              <span>Reset</span>
+            </button>
+          </div>
         </div>
-        <button class="start btn btn-success">Start</button>
-        <button class="stop btn btn-danger">stop</button>
-        <button class="reset btn btn-warning" type="reset">reset</button>
-        
       </div>
     </section>
 
